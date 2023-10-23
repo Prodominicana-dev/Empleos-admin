@@ -1,0 +1,27 @@
+.textCo {
+    margin: 20px;
+    /* font-size: 1.2em; */
+    /* color: #818181; */
+    line-height: 18px;
+    white-space: pre-wrap;
+    height: auto;
+    /* word-wrap: break-word; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+    text-align: justify;
+    background: rgb(244, 245, 242);
+    color: black;
+    text-shadow: 1px 1px #fff;
+}
+.textTi{
+    background: rgb(216, 206, 212);
+    color: black;
+    text-shadow: 1px 1px #fff;
+    font-size :18px;
+}
+.textCColor{
+    background: rgb(244, 245, 242);
+    color: black;
+    text-shadow: 1px 1px #fff;
+}
