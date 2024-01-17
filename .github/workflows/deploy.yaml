@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
             # Comandos a ejecutar en el servidor remoto
-             cd /var/www/EmpleosAdmin
+             cd /var/www/node/EmpleosAdmin
              git reset --hard HEAD
              git pull
              npm install
