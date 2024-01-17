@@ -4,8 +4,9 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 //import api from '../pages/api/profile'
 const Menu = () => {
-    const [enlaceActivo, setEnlaceActivo] = useState('');
+    
 
+   
    
     const router = useRouter();
     const [user, setUser] = useState({
@@ -52,9 +53,9 @@ const Menu = () => {
     
   }
 
-  const handleEnlaceClick = (enlace) => {
-    setEnlaceActivo(enlace);
-  };
+  
+
+ 
   const enlaces = [
     { ruta: '/Inicio', icono: 'bx bx-home-alt', texto: 'Inicio' },
     { ruta: '/Categoria', icono: 'bx bx-list-ul', texto: 'Categoría' },
@@ -64,10 +65,22 @@ const Menu = () => {
   ];
   return (
     <div className="menu-bar">
-        <style>
-            {`.nav-link.active {
-                background-color: #2196F3; 
-                }
+        <style jsx>{`
+            .nav-link {
+                list-style-type: none;
+                margin: 0;
+              
+                border-radius: 10px; /* Ajusta el valor según tu preferencia */
+            }
+
+            .nav-link.active {
+                background-color: #2196F3;
+                color: white; /* Texto blanco cuando está activo */
+            }
+
+            
+
+            
                 `}
         </style>
         <div className="menu">
@@ -83,6 +96,9 @@ const Menu = () => {
           </li>
         ))}
       </div>
+
+      
+
             <div className="bottom-content">
                 {registrarUsuario()}
                 <li className="">

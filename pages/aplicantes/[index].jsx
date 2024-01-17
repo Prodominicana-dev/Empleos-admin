@@ -367,7 +367,7 @@ const [Period, setPeriod] = useState([]);
                        
                         <Column field="name" header="Nombre" sortable body={nameBodyTemplate} headerStyle={{ minWidth: '15rem',textAlign:'center' }}></Column> 
                         <Column field="email" header="Correo Electrónico" body={EmailBodyTemplate} sortable></Column>
-                        <Column field="id" header="Evaluación" body={AssessmentAnswer} sortable></Column>
+                        {/* <Column field="id" header="Evaluación" body={AssessmentAnswer} sortable></Column> */}
                         <Column body={actionBodyTemplate} headerStyle={{ minWidth: '10rem' }}></Column>
                     </DataTable>
 

@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
 import Header from './Header'
-import Footer from './Footer'
 import Menu from './Menu'
-import {useRef, useEffect} from 'react';
+import {useEffect} from 'react';
 const Layout = ({children,pagina}) => {
 
   

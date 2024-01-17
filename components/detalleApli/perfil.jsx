@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../styles/DetalleAplicante.module.css'
-
+import { formatPhoneNumber } from '../phone/phone';
 const Perfil = ({data}) => {
     
 
@@ -54,13 +54,13 @@ const Perfil = ({data}) => {
                     
                     <div className='col-lg-3 mb-3'>
                     <div className={styles.textTi}>Teléfono móvil: </div>
-                    <div  className={styles.textCColor}> {mobile}</div>
+                    <div  className={styles.textCColor}> {formatPhoneNumber(mobile)}</div>
                     </div>
                     
                    
                     <div className='col-lg-3 mb-3'>
                     <div className={styles.textTi}>Teléfono fijo: </div>
-                    <div  className={styles.textCColor}> {landline}</div>
+                    <div  className={styles.textCColor}> {formatPhoneNumber(landline)}</div>
                     </div>
                     <div className='col-lg-3 mb-3'>
                     <div className={styles.textTi}>País de nacimiento: </div>
@@ -126,7 +126,7 @@ const Perfil = ({data}) => {
                     </div>
                     <div className='col-lg-3 mb-3'>
                     <div className={styles.textTi}>Teléfono: </div>
-                    <div  className={styles.textCColor}> {relationshipLandline}</div>
+                    <div  className={styles.textCColor}> {formatPhoneNumber(relationshipLandline)}</div>
                     </div>
         
                     <div>Parentesco:</div>

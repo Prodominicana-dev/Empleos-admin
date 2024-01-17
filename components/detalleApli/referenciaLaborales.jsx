@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import styles from '../../styles/DetalleAplicante.module.css';
 import axios from 'axios';
 import {Url} from '../Url/URL';
-
+import { formatPhoneNumber } from '../phone/phone';
 const ProfessionalReferences=({data})=>{
     const [professionalReferences, setProfessionalReferences] = useState([])
 
@@ -40,7 +40,7 @@ const ProfessionalReferences=({data})=>{
                                     </div>
                                     <div className='col-lg-3'>
                                     <div className={styles.textTi}>Teléfonos: </div>
-                                    <div  className={styles.textCColor}> {e.landline}</div>
+                                    <div  className={styles.textCColor}> {formatPhoneNumber(e.landline)}</div>
                                     </div>
                                     <div className='col-lg-3'>
                                     <div className={styles.textTi}>Profesión: </div>

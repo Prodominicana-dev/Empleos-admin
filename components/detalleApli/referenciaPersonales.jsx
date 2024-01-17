@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import styles from '../../styles/DetalleAplicante.module.css';
 import axios from 'axios';
 import {Url} from '../Url/URL';
-
+import { formatPhoneNumber } from '../phone/phone';
 const PersonalReferences =({data})=>{
     const [personalReferences, setPersonalReferences] = useState([])
 
@@ -39,8 +39,8 @@ const PersonalReferences =({data})=>{
                                         <div  className={styles.textCColor}> {e.fullName}</div>
                                         </div>
                                         <div className='col-lg-3'>
-                                        <div className={styles.textTi}>Teléfonos: </div>
-                                        <div  className={styles.textCColor}>{e.landline}</div>
+                                        <div className={styles.textTi}>Teléfono: </div>
+                                        <div  className={styles.textCColor}>{formatPhoneNumber(e.landline)}</div>
                                         </div>
                                         <div className='col-lg-3'>
                                         <div className={styles.textTi}>Ocupación: </div>

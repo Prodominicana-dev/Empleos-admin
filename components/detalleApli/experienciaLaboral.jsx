@@ -3,6 +3,7 @@ import styles from '../../styles/DetalleAplicante.module.css';
 // import { parseISO, format } from 'date-fns';
 import axios from 'axios';
 import {Url} from '../Url/URL';
+import { formatPhoneNumber } from '../phone/phone';
 
 const WorkExperience =({data})=>{
     const [workExperience, setWorkExperience] = useState([])
@@ -19,6 +20,9 @@ const WorkExperience =({data})=>{
 
     const ExpLab=()=>{
         let num=1;
+
+        
+
         return(
             <>
             <div className='container'>
@@ -77,7 +81,7 @@ const WorkExperience =({data})=>{
 
                                         <div className='col-lg-3 mb-4'>
                                         <div className={styles.textTi}>Teléfono: </div>
-                                        <div  className={styles.textCColor}>{e.phoneNumber}</div>
+                                        <div  className={styles.textCColor}>{formatPhoneNumber(e.phoneNumber)}</div>
                                         </div>
 
                                         <div className='col-lg-12'>
