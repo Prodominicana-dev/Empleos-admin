@@ -2,7 +2,7 @@ name: Deploy EmpleosAdmin
 on:
   push:
     branches:
-      - main # Cambiar esto al nombre de la rama que quieres que despliegue el proyecto
+      - master # Cambiar esto al nombre de la rama que quieres que despliegue el proyecto
 
 jobs:
   deploy:
