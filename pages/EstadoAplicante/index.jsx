@@ -168,7 +168,7 @@ const ListaSuscripcion = () => {
     
 
     return (
-        <Layout pagina='Categorias'>
+        <Layout pagina='Estado Aplicante'>
         <div className="grid crud-demo">
             <div className="col-12">
                 <div className="">
