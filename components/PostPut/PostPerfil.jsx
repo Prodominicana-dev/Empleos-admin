@@ -314,13 +314,13 @@ export async function GetLanguage(id){
 
 //PersonalReferences.......................................................................
 export async function DeleteKnowledge(eliminar){
-
+  console.log(eliminar)
     eliminar.map(async(eliminar)=>{
 
 
-        if(eliminar.Id != null){
+        if(eliminar.id != null){
 
-        await Axios.delete(`${Url}KnowledgeAssessment/${eliminar.Id}`).then(res=>{
+        await Axios.delete(`${Url}KnowledgeAssessment/${eliminar.id}`).then(res=>{
 
         console.log('Conocimientos de informática eliminado exitosamente');
         }).catch (error=>{
