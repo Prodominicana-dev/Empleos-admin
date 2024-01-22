@@ -183,6 +183,7 @@ if(algunCampoVacio){
           actializarPage();
 
           toast.current.show({ severity: 'success', summary: 'Successful', detail: 'Evaluación para la vacante: Desarrollador. Fue guardada', life: 8000 });
+          
           router.push(`/assessment/${id}`);
     }
 }
@@ -349,7 +350,7 @@ const backButton=()=>{
     return(
         <>
         <div className="d-flex justify-content-end">
-                <Link href={`/Vacantes`}>
+                <Link href={`/Vacantes`} passHref>
 
                     <Button className='mb-2 p-button-rounded'  icon="pi pi-arrow-left" severity="warning" type='button' style={{ backgroundColor: 'yellow' }}></Button>
 

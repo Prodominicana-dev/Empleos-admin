@@ -392,7 +392,7 @@ const Usuario=()=>{
                        
                     </div>
 
-                        <Link className='mr-2' href={`/aplicantes/${rowData.id}`}>
+                        <Link className='mr-2' href={`/aplicantes/${rowData.id}`} passHref>
                         <Button icon="pi pi-user" rounded severity="info" className="mt-2"  style={{width:'60%'}} >
                         {aplicante[rowData.id] !== undefined ? (
                                 <Badge value={aplicante[rowData.id]} />
@@ -403,7 +403,7 @@ const Usuario=()=>{
                         </Button>
                         </Link>
 
-                        <Link href={`/assessment/${rowData.id}`}>
+                        <Link href={`/assessment/${rowData.id}`} passHref>
                         <Button icon="pi pi-bookmark"  severity="info" className="mt-2" style={{width:'60%'}} ></Button>
                         </Link>
 
