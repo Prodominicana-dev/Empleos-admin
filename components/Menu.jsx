@@ -74,7 +74,7 @@ const Menu = () => {
             }
 
             .nav-link.active {
-                background-color: #2196F3;
+                background-color: #ABB2BF;
                 color: white; /* Texto blanco cuando está activo */
             }
 
