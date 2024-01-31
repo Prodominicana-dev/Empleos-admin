@@ -385,8 +385,8 @@ const Usuario=()=>{
             <>
                 <div className='col-lg-12 row'>
                     <div className=''>
-                        <Button icon="pi pi-pencil" severity="success" rounded className="mr-2" onClick={() => editVacante(rowData)} />
-                        <Button icon="pi pi-trash" severity="warning" rounded className="mr-2" onClick={() => confirmDeleteVacante(rowData)} />
+                        <Button icon="pi pi-pencil" severity="success" rounded className="mr-2" onClick={() => editVacante(rowData)}  />
+                        <Button icon="pi pi-trash" severity="warning" rounded className="mr-2" onClick={() => confirmDeleteVacante(rowData)}  />
 
 
                        

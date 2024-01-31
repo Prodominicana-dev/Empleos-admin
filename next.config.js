@@ -5,16 +5,16 @@ const nextConfig = {
 
 module.exports = nextConfig
 
-module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: '/pdf',
-        destination: '/PdfViewer',
-      },
-    ];
-  },
-};
+// module.exports = {
+//   async rewrites() {
+//     return [
+//       {
+//         source: '/pdf',
+//         destination: '/PdfViewer',
+//       },
+//     ];
+//   },
+// };
 
 module.exports = {
   env: {
